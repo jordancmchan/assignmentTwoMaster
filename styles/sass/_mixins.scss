@@ -12,65 +12,22 @@
 }
 
 @mixin tabletSize1100 {
-  @media (max-width: 1100px) {
-    .wrapper {
-      width: 90%;
-    }
+  @media (max-width: 1200px) {
+      
+    .indexHeader{
+      background-size: cover;
+      background-position:right;
 
-    .indexHeader {
-      min-height: 555px;
     }
+    .mainDiscoverContainer{
+      padding-top: 0;
+    };
 
-    .newLocationsContainer img {
-      box-shadow: -15px 15px 3px $brightYellow;
-    }
-
-    .groupProgramsContainer img {
-      box-shadow: 15px 15px 3px $brightYellow;
-    }
-
-    .groupProgramsContainer img {
-      top: -38px;
-      left: -54px;
-    }
-
-    .newLocationsContainer img {
-      bottom: -175px;
-      right: -54px;
-    }
-
-    .newLocationsText {
-      padding: 50px 0 70px;
-    }
-
-    .groupProgramsText {
-      padding-bottom: 0;
-    }
-
-    .mainBlog {
-      width: 62%;
-    }
-
-    .sideNotes {
-      width: 32%;
-    }
-
-    .mainTextContainer {
-      padding: 50px 20px;
-      h3 {
-        width: 100%;
-      }
-    }
-
-    section.comments {
-      width: 100%;
-    }
-
-    .blogHeader,
-    .contactHeader {
-      min-height: 461px;
-    }
+    // .blueCouch {
+    //   top: 22%;
+    // }
   }
+  
 }
 
 @mixin tabletSize800 {

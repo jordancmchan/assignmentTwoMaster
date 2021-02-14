@@ -303,9 +303,8 @@ nav ul li a:hover, nav ul li a:focus {
 
 .indexHeader {
   background-image: url(../assets/header-home.jpg);
-  min-height: 100vh;
-  background-size: cover;
-  background-position: center;
+  height: 100vh;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -755,7 +754,6 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 20vh;
 }
 
 .discoverTxtContainer {
@@ -994,53 +992,13 @@ footer p {
   color: #E0FDDF;
 }
 
-@media (max-width: 1100px) {
-  .wrapper {
-    width: 90%;
-  }
+@media (max-width: 1200px) {
   .indexHeader {
-    min-height: 555px;
+    background-size: cover;
+    background-position: right;
   }
-  .newLocationsContainer img {
-    -webkit-box-shadow: -15px 15px 3px #F8FB05;
-            box-shadow: -15px 15px 3px #F8FB05;
-  }
-  .groupProgramsContainer img {
-    -webkit-box-shadow: 15px 15px 3px #F8FB05;
-            box-shadow: 15px 15px 3px #F8FB05;
-  }
-  .groupProgramsContainer img {
-    top: -38px;
-    left: -54px;
-  }
-  .newLocationsContainer img {
-    bottom: -175px;
-    right: -54px;
-  }
-  .newLocationsText {
-    padding: 50px 0 70px;
-  }
-  .groupProgramsText {
-    padding-bottom: 0;
-  }
-  .mainBlog {
-    width: 62%;
-  }
-  .sideNotes {
-    width: 32%;
-  }
-  .mainTextContainer {
-    padding: 50px 20px;
-  }
-  .mainTextContainer h3 {
-    width: 100%;
-  }
-  section.comments {
-    width: 100%;
-  }
-  .blogHeader,
-  .contactHeader {
-    min-height: 461px;
+  .mainDiscoverContainer {
+    padding-top: 0;
   }
 }
 
