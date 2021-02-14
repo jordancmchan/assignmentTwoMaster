@@ -267,16 +267,13 @@ nav ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 15px 0px;
 }
 
 nav ul li {
   font-size: 1.5rem;
   padding: 20px;
-  margin: 0 10px;
   text-transform: uppercase;
   list-style: none;
-  color: blue;
 }
 
 nav ul li a {
@@ -288,19 +285,20 @@ nav ul li a {
 }
 
 nav ul li a:hover, nav ul li a:focus {
-  border-bottom: 5px solid #F8FB05;
+  border-bottom: 3px solid #065635;
+  font-size: 1.7rem;
+  color: #065635;
 }
 
 .indexHeader h1 {
+  display: inline-block;
   font-family: "Kumar One Outline", cursive;
   font-size: 6rem;
   font-weight: 100;
   line-height: 64px;
   color: #151514;
-  width: 60%;
+  width: 50%;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-left: 5%;
 }
 
 .indexHeader {
@@ -313,26 +311,18 @@ nav ul li a:hover, nav ul li a:focus {
 
 .blogHeader {
   background-image: url(../assets/blog-image.jpg);
-  min-height: 553px;
+  min-height: 85vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.blogHeader h1 {
-  margin-top: 100px;
 }
 
 .contactHeader {
   background-image: url(../assets/contact-image.jpg);
-  min-height: 664px;
+  min-height: 70vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.contactHeader h1 {
-  margin-top: 130px;
 }
 
 h2.logo {
@@ -344,6 +334,18 @@ h2.logo {
   width: 20%;
   padding-top: 25px;
   text-transform: uppercase;
+}
+
+h2.logo a {
+  color: #151514;
+  text-decoration: none;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+h2.logo a:hover {
+  color: #065635;
+  font-size: 2.3rem;
 }
 
 h3 {
@@ -444,6 +446,17 @@ main {
   height: auto;
 }
 
+.contactHeader h1 {
+  font-family: "Kumar One Outline", cursive;
+  font-size: 6rem;
+  font-weight: 100;
+  line-height: 64px;
+  color: #151514;
+  width: 60%;
+  text-transform: uppercase;
+  margin-top: 90px;
+}
+
 .contactInfo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -453,13 +466,11 @@ main {
           justify-content: space-between;
 }
 
-.fieldsetContainer {
-  width: 60%;
-}
-
-fieldset.contactFieldset {
+.form {
   position: relative;
+  width: 75%;
   bottom: 120px;
+  right: 5%;
   background-color: white;
   -webkit-box-shadow: 15px 15px 3px #F8FB05;
           box-shadow: 15px 15px 3px #F8FB05;
@@ -478,16 +489,19 @@ fieldset.contactFieldset {
   transition: 0.3s ease-in-out;
 }
 
+.contactDes i:hover {
+  color: #F8FB05;
+}
+
+.contactDes i:focus {
+  color: #F8FB05;
+}
+
 .contactDes p {
   font-family: "Lato", sans-serif;
   font-size: 1.5rem;
   line-height: 22px;
   letter-spacing: 4px;
-}
-
-.contactDes i:hover,
-.contactDes i:focus {
-  color: #F8FB05;
 }
 
 .email {
@@ -496,65 +510,15 @@ fieldset.contactFieldset {
   margin-top: 15px;
 }
 
-main {
-  background-color: #E0FDDF;
-}
-
-h3.rightPrice {
-  width: 70%;
-}
-
-.comments h3 {
-  margin-bottom: 20px;
-}
-
-.mainTextContainer {
-  background-color: white;
-  padding: 50px 80px;
-  -webkit-box-shadow: 15px 15px 3px #F8FB05;
-          box-shadow: 15px 15px 3px #F8FB05;
-}
-
-.mainImageContainer img {
-  -webkit-box-shadow: 15px 20px 3px #F8FB05;
-          box-shadow: 15px 20px 3px #F8FB05;
-}
-
-.blogText {
-  margin: 20px 0;
-}
-
-.mainBlog {
-  position: relative;
-  bottom: 145px;
-}
-
-.mainBlog,
-.comments {
+.blogHeader h1 {
+  font-family: "Kumar One Outline", cursive;
+  font-size: 6rem;
+  line-height: 64px;
+  font-weight: 100;
+  color: #151514;
   width: 60%;
-}
-
-section.comments {
-  position: relative;
-  bottom: 65px;
-}
-
-.sideNotes {
-  position: relative;
-  top: 100px;
-  width: 20%;
-}
-
-.sideImageContainer img {
-  -webkit-box-shadow: -15px 15px 3px #F8FB05;
-          box-shadow: -15px 15px 3px #F8FB05;
-}
-
-.sideTextContainer {
-  padding: 28px;
-  background-color: #F8FB05;
-  -webkit-box-shadow: -15px 0 3px #F8FB05;
-          box-shadow: -15px 0 3px #F8FB05;
+  text-transform: uppercase;
+  margin-top: 100px;
 }
 
 .blogContainer {
@@ -566,19 +530,99 @@ section.comments {
           justify-content: space-between;
 }
 
+.mainBlog {
+  background-color: #E0FDDF;
+  width: 65%;
+  position: relative;
+  bottom: 145px;
+}
+
+.mainBlog img {
+  -webkit-box-shadow: 15px 25px 3px #F8FB05;
+          box-shadow: 15px 25px 3px #F8FB05;
+  width: 100%;
+  height: auto;
+}
+
+.mainBlog .wrapper {
+  width: 100%;
+}
+
+.mainTextContainer {
+  background-color: white;
+  padding: 50px 80px;
+  -webkit-box-shadow: 15px 5px 3px #F8FB05;
+          box-shadow: 15px 5px 3px #F8FB05;
+  width: 100%;
+}
+
+.mainTextContainer p {
+  margin: 20px 0;
+}
+
+.sideNotes {
+  position: relative;
+  top: 100px;
+  width: 20%;
+}
+
+.sideNotes img {
+  -webkit-box-shadow: -15px 15px 3px #F8FB05;
+          box-shadow: -15px 15px 3px #F8FB05;
+  width: 100%;
+  height: auto;
+}
+
+.sideTextContainer {
+  padding-bottom: 30px;
+  background-color: #F8FB05;
+  -webkit-box-shadow: -15px 0 3px #F8FB05;
+          box-shadow: -15px 0 3px #F8FB05;
+  text-align: left;
+}
+
+.sideTextContainer li {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  line-height: 25px;
+  letter-spacing: 2px;
+  list-style-position: inside;
+}
+
+.sideTextContainer h3:nth-of-type(2) {
+  padding-top: 15px;
+}
+
+.comments {
+  width: 66%;
+  position: relative;
+  bottom: 10vh;
+}
+
+.comments .commentContainer:first-of-type {
+  padding: 5% 0;
+}
+
 .commentContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding-bottom: 25px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-.commentImg {
-  width: 50%;
-  margin: 10px 30px 30px 0;
+.commentContainer img {
+  width: 10%;
+  height: 100%;
+}
+
+.commentContainer .commentText {
+  margin-left: 50px;
+}
+
+.commentContainer .commentText p:first-child {
+  font-weight: bold;
 }
 
 fieldset {
@@ -678,10 +722,6 @@ input.blogEmail {
   width: 50%;
 }
 
-.commentTxt p:first-child {
-  text-transform: uppercase;
-}
-
 footer {
   background-color: black;
 }
@@ -771,11 +811,7 @@ footer p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 50px 0;
-}
-
-.threeImgContainer .threeImgContainer img:nth-of-type(3n) {
-  padding-right: 0;
+  padding: 10vh 0;
 }
 
 .threeImgContainer img {
@@ -783,9 +819,13 @@ footer p {
   padding-right: 20px;
 }
 
+.threeImgContainer img:last-child {
+  padding-right: 0;
+}
+
 .aboutSection {
   background-color: white;
-  padding: 5vh 0 15vh;
+  padding: 3vh 0 15vh;
 }
 
 .aboutSection ul {
@@ -854,7 +894,7 @@ footer p {
 
 .groupProgramsContainer img,
 .newLocationsContainer img {
-  max-width: 150%;
+  max-width: 132%;
   height: auto;
   position: relative;
 }

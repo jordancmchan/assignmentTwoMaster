@@ -3,18 +3,27 @@ main {
   height: auto;
 }
 
+.contactHeader h1{
+  font-family: $kumarOneOutline;
+  font-size: 6rem;
+  font-weight: 100;
+  line-height: 64px;
+  color: $black;
+  width: 60%;
+  text-transform: uppercase;
+  margin-top: 90px;
+}
+
 .contactInfo{
   display: flex;
   justify-content: space-between;
 }
 
-.fieldsetContainer {
-  width: 60%;
-}
-
-fieldset.contactFieldset {
+.form {
   position: relative;
+  width:75%;
   bottom: 120px;
+  right: 5%;
   background-color: white;
   box-shadow: 15px 15px 3px $brightYellow;
 }
@@ -27,6 +36,12 @@ fieldset.contactFieldset {
     color: $everGreen;
     letter-spacing: 10px;
     transition: 0.3s ease-in-out;
+    &:hover{
+      color: $brightYellow;
+    }
+    &:focus{
+      color: $brightYellow;
+    }
   }
   p {
     font-family: $lato;
@@ -34,12 +49,6 @@ fieldset.contactFieldset {
     line-height: 22px;
     letter-spacing: 4px;
   }
-}
-
-.contactDes i:hover,
-.contactDes i:focus {
-  color: $brightYellow;
-  
 }
 
 .email {

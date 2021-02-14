@@ -8,17 +8,12 @@ nav {
      ul {
           display: flex;
           justify-content: flex-end;
-          padding: 15px 0px;
 
           li {
                font-size: 1.5rem;
                padding: 20px;
-               margin: 0 10px;
-               
                text-transform: uppercase;
                list-style: none;
-               color: blue;
-
                a {
                     font-family: $lato;
                     color: $black;
@@ -26,7 +21,9 @@ nav {
                     transition: 0.3s ease-in-out;
                     
                     &:hover, &:focus {
-                    border-bottom: 5px solid $brightYellow;
+                    border-bottom: 3px solid $everGreen;
+                    font-size: 1.7rem;
+                    color:$everGreen;
                     }
                }
           }
