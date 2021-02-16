@@ -59,9 +59,10 @@ textarea{
      border: none;
      text-transform: uppercase;
      transition: 0.3s ease-in-out;
+     &:hover{
+     color: $everGreen;
+     background-color: $ice;
+     border: $everGreen  solid 1.5px; 
+     }
 }
 
-.messageSubmit button:hover,
-.messageSubmit button:focus{
-     color: $brightYellow;
-}

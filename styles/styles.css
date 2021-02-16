@@ -291,14 +291,18 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 .indexHeader h1 {
-  display: inline-block;
   font-family: "Kumar One Outline", cursive;
   font-size: 6rem;
   font-weight: 100;
   line-height: 64px;
   color: #151514;
-  width: 50%;
+  width: 40%;
   text-transform: uppercase;
+  display: inline-block;
+}
+
+.indexHeader h1:hover {
+  color: #065635;
 }
 
 .indexHeader {
@@ -333,6 +337,7 @@ h2.logo {
   width: 20%;
   padding-top: 25px;
   text-transform: uppercase;
+  display: inline;
 }
 
 h2.logo a {
@@ -435,9 +440,10 @@ textarea {
   transition: 0.3s ease-in-out;
 }
 
-.messageSubmit button:hover,
-.messageSubmit button:focus {
-  color: #F8FB05;
+.messageSubmit button:hover {
+  color: #065635;
+  background-color: #E0FDDF;
+  border: #065635 solid 1.5px;
 }
 
 main {
@@ -698,9 +704,10 @@ textarea {
   transition: 0.3s ease-in-out;
 }
 
-.messageSubmit button:hover,
-.messageSubmit button:focus {
-  color: #F8FB05;
+.messageSubmit button:hover {
+  color: #065635;
+  background-color: #E0FDDF;
+  border: #065635 solid 1.5px;
 }
 
 .blogFieldset {
@@ -797,8 +804,17 @@ footer p {
 }
 
 .greyCouch img {
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
   -webkit-box-shadow: -15px 15px 3px #F8FB05;
           box-shadow: -15px 15px 3px #F8FB05;
+}
+
+.greyCouch img:hover {
+  -webkit-box-shadow: -15px 15px 3px #065635;
+          box-shadow: -15px 15px 3px #065635;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 .indexGallery {
@@ -809,19 +825,24 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 10vh 0;
 }
 
 .threeImgContainer img {
   width: calc((100% - 40px) / 3);
-  padding-right: 20px;
 }
 
 .threeImgContainer img:last-child {
   padding-right: 0;
+}
+
+.threeImgContainer img:hover {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  -webkit-box-shadow: 7px 7px 7px #065635;
+          box-shadow: 7px 7px 7px #065635;
 }
 
 .aboutSection {
@@ -848,15 +869,15 @@ footer p {
 }
 
 .aboutSection ul li a i:hover {
-  background-color: #065635;
-  border: 1px solid black;
-  color: white;
+  background-color: #E0FDDF;
+  border: 1px solid #065635;
+  color: #065635;
 }
 
 .aboutSection ul li a i:focus {
-  background-color: #065635;
-  border: 1px solid black;
-  color: white;
+  background-color: #E0FDDF;
+  border: 1px solid #065635;
+  color: #065635;
 }
 
 .aboutSection ul li .fas {
