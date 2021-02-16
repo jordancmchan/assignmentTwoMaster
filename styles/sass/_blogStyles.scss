@@ -12,6 +12,7 @@
 .blogContainer {
   display: flex;
   justify-content: space-between;
+  max-height: 2000px;
 }
 .mainBlog {
   background-color: $ice;
@@ -93,12 +94,6 @@
      }
      
 }
-
-
-
-
-
-
 
 @import "form";
 

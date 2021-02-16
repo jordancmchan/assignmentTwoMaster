@@ -102,7 +102,7 @@ p {
 .mainDiscoverContainer {
   background-color: white;
   padding-bottom: 10vh;
-
+  padding-top:130px;
 }
 
 .blueCouch {
@@ -111,6 +111,7 @@ p {
   position: absolute;
   left: 0%;
   top: 40%;
+  display: inline-block;
 }
 
 .discoverContainer {
@@ -142,12 +143,11 @@ p {
   letter-spacing: 2.5px;
 
   &:hover{
-    color: $black;
-    background-color: $everGreen;
-    border: $black  solid 1.5px; 
+    color: $everGreen;
+    background-color: $ice;
+    border: $everGreen  solid 1.5px; 
   }
 }
-
 
 .greyCouch {
   width: 25%;
@@ -228,7 +228,6 @@ p {
 .groupProgramsContainer,
 .newLocationsContainer {
   display:flex;
-
   img {
     max-width:132%;
     height: auto;
@@ -280,8 +279,6 @@ p {
     height:auto;
   }
 } 
-
-
 
 .searchText {
   text-align: center;

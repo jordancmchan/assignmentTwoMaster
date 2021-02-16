@@ -1,6 +1,5 @@
 @mixin headerImage {
   background-image: url(../assets/header-home.jpg);
-  
 }
 
 @mixin blogHeaderImage {
@@ -12,77 +11,111 @@
 }
 
 @mixin tabletSize1100 {
-  @media (max-width: 1200px) {
-      
-    .indexHeader{
-      background-size: cover;
-      background-position:right;
-
+  @media (max-width: 1100px) {
+    .mainDiscoverContainer {
+      padding-top: 5vh;
     }
-    .mainDiscoverContainer{
-      padding-top: 0;
-    };
-
-    // .blueCouch {
-    //   top: 22%;
-    // }
   }
-  
 }
 
 @mixin tabletSize800 {
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     body {
       overflow-x: hidden;
-    }
-
-    .wrapper {
-      width: 95%;
-    }
-
-    .indexHeader {
-      min-height: 350px;
-    }
-
-    .blogHeader,
-    .contactHeader {
-      min-height: 267px;
-      h1 {
-        padding-top: 38px;
-        margin: 0;
-        width: 70%;
+      .wrapper {
+        width: 95%;
       }
     }
 
-    h1 {
-      width: 20%;
-      font-size: 5.1rem;
-      padding-top: 70px;
-      margin: 0;
+    .indexHeader {
+      background-size: cover;
+      height: 45vh;
     }
 
-    p {
-      font-size: 1.8rem;
+    .blueCouch {
+      top: 25%;
     }
 
-    h3 {
-      font-size: 2.5rem;
-      line-height: 32px;
-      padding-bottom: 20px;
+    .mainDiscoverContainer {
+      padding-top: 30vh;
+      .discoverTxtContainer {
+        width: 55%;
+      }
+      .greyCouch {
+        margin: 10% 15% 0 0;
+      }
     }
 
-    .discoverContainer {
-      margin-bottom: 20px;
+    .mainDiscoverContainer {
+      .buttonOneContainer {
+        justify-content: flex-start;
+      }
     }
 
-    .discoverTxtContainer h3 {
-      padding: 25px;
-      margin-bottom: 0;
+    .threeImgContainer {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding: 30px 0;
     }
 
-    .discoverTxtContainer p {
-      padding: 0 25px 35px;
+    .aboutSection {
+      padding: 30px 0 80px 0;
     }
+
+    .searchText {
+      padding: 40px 0 50px 0;
+    }
+
+    .groupProgramsContainer {
+      margin-left: 5%;
+    }
+
+    .newLocationsContainer {
+      margin-right: 5%;
+    }
+
+    .mainTextContainer {
+      padding: 50px 10px 50px 10px;
+    }
+
+    .sideNotes {
+      width: 33%;
+    }
+
+    .comments {
+      width: 100%;
+      h3 {
+        text-align: center;
+      }
+    }
+
+    .contactHeader {
+      h1 {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .contactInfo {
+      .form {
+        width: 100%;
+        right: 0;
+      }
+    }
+
+    .contactDes {
+      display: flex;
+      justify-content: center;
+      padding: 0 0 80px 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .contactInfo {
+      flex-direction: column;
+    }
+
+    ///////NAV MENU STARTS//////
 
     .navMenu {
       padding: 15px;
@@ -106,161 +139,32 @@
     .burger {
       display: block;
     }
-
-    .blueCouchContainer {
-      width: 58%;
-      img {
-        bottom: 58px;
-      }
-    }
-
-    .greyCouch {
-      margin-right: 5%;
-    }
-
-    .mainDiscoverContainer {
-      .buttonOneContainer {
-        justify-content: flex-start;
-      }
-    }
-
-    .buttonOneContainer {
-      display: flex;
-      justify-content: center;
-      margin: 25px 0;
-    }
-
-    .aboutSection {
-      padding: 30px 0;
-      ul {
-        justify-content: center;
-        li {
-          width: 50%;
-          margin-bottom: 0;
-        }
-      }
-    }
-
-    .aboutSection ul li .fas {
-      top: 31px;
-    }
-
-    .threeImgContainer {
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      padding: 30px 0;
-      img {
-        width: 50%;
-        max-height: 100%;
-        padding: 5px;
-      }
-    }
-
-    .groupProgramsContainer,
-    .newLocationsContainer {
-      flex-direction: column;
-      img {
-        position: static;
-      }
-    }
-
-    .groupProgramsText,
-    .newLocationsText {
-      text-align: center;
-      max-width: 100%;
-      p {
-        text-align: left;
-      }
-    }
-
-    .searchText {
-      padding: 30px 0;
-    }
-
-    .mainBlog {
-      width: 60%;
-      bottom: 40px;
-      .mainTextContainer {
-        padding: 0;
-        h3 {
-          width: 100%;
-          padding: 35px 0;
-        }
-      }
-    }
-
-    .sideNotes {
-      width: 33%;
-      .sideTextContainer {
-        padding: 25px 5px;
-      }
-      h3 {
-        font-size: 2rem;
-        padding: 10px 0;
-      }
-    }
-
-    section.comments {
-      position: static;
-      width: 100%;
-    }
-
-    .fieldsetContainer {
-      width: 100%;
-    }
-
-    fieldset.contactFieldset {
-      width: 100%;
-      bottom: 45px;
-    }
-
-    .contactDes {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 20px 0;
-      width: 100%;
-    }
-
-    .contactInfo {
-      flex-direction: column;
-    }
-
-    .email {
-      padding-bottom: 0;
-    }
   }
 }
 
 @mixin phoneSize600 {
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     .indexHeader h1 {
+      width: 100%;
       text-align: center;
     }
-    .discoverContainer {
-      h3 {
-        text-align: center;
-      }
-      a {
-        text-align: center;
-        width: 100%;
-      }
-    }
     .mainDiscoverContainer {
-      margin-top: 129px;
-    }
-
-    .blueCouch {
-      margin-top: 50px;
-    }
-    .discoverContainer {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .greyCouch,
-    .discoverTxtContainer {
       width: 100%;
+      padding-top: 20vh;
+      .discoverContainer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        p {
+          margin-bottom: 30px;
+        }
+        .discoverTxtContainer {
+          width: 100%;
+        }
+        .greyCouch {
+          width: 100%;
+        }
+      }
     }
 
     .aboutSection {
@@ -272,78 +176,81 @@
       }
     }
 
+    .indexArticle{
+      padding-bottom: 50px;
+    }
+
+    //END OF INDEX HTML//
+
+    .blogHeader h1 {
+      width: 100%;
+      text-align: center;
+    }
     .blogContainer {
       flex-direction: column;
-      .mainBlog,
-      .sideNotes {
+      .mainBlog {
         width: 100%;
-      }
-    }
-
-    .sideNotes {
-      top: -60px;
-      .sideTextContainer {
-        text-align: center;
-        padding: 15%;
-        p {
-          text-align: left;
-        }
-      }
-    }
-
-    .paragraphOne {
-      padding-bottom: 20px;
-    }
-
-    .mainImageContainer {
-      img {
-        box-shadow: none;
       }
     }
 
     .mainTextContainer {
       box-shadow: none;
+      padding-bottom: 30px;
       h3 {
-        width: 85%;
+        width: 100%;
+        text-align: center;
+      }
+      p {
         text-align: center;
       }
     }
 
-    .mainTextContainer .blogText:last-child {
-      padding-bottom: 20px;
-    }
-
-    .comments {
-      h3 {
-        text-align: center;
-      }
-    }
-
-    .commentImg {
+    .sideNotes {
+      display: flex;
+      justify-content: space-between;
       width: 100%;
+      position: relative;
+      top: -155px;
+      img {
+        box-shadow: none;
+      }
+      .sideTextContainer {
+        text-align: center;
+        box-shadow: none;
+        padding-bottom: 0px;
+        h3 {
+          padding-top: 30px;
+        }
+        p {
+          text-align: center;
+        }
+      }
     }
   }
 }
 
 @mixin phoneSize500 {
   @media (max-width: 500px) {
-    .contactDes {
-      flex-direction: column;
-      padding: 0;
-      .socialContainer,
-      .addressContainer {
-        width: 100%;
-        margin-bottom: 20px;
-        text-align: center;
+    .indexHeader {
+      h1 {
+        font-size: 4rem;
+        margin-top: 75px;
+      }
+      img {
+        display: none;
       }
     }
 
-    .contactDes {
-      a {
-        padding: 0 20px;
-        i {
-          font-size: 3rem;
-        }
+    .mainDiscoverContainer{
+      padding-top: 5vh;
+    }
+
+    .sideNotes{
+      .sideTextContainer{
+        padding-bottom:50px;
+      }
+      img{
+        display: none;
       }
     }
   }
