@@ -22,4 +22,4 @@
 
 
 
-// tried using an external script sheet but didnt work out....
+// tried using an external script sheet but didnt work out....everything was coming up null. Decided to do internal script sheet but 
