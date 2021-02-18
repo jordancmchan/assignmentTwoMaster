@@ -1,23 +1,25 @@
-const contactForm = {}
+// const contactForm = {}
 
-contactForm.name = document.querySelector('#name').value;
-contactForm.email = document.querySelector('#email').value;
-contactForm.message = document.querySelector('#message').value;
-contactForm.submitButton = document.querySelector('button');
-
-contactForm.init = function(){
-     console.log(contactForm)
-     contactForm.name.addEventListener('click', function(){
-
-          console.log('fafs')
-
-     })
+// const form = document.querySelector('form');
+// const name = document.querySelector('#name');
+// const email = document.querySelector('#email');
+// const message = document.querySelector('#message');
+// const submitButton = document.querySelector('button');
 
 
+// form.addEventListener('submit', function(){
+     
+//      console.log('fafs')
+     
+// })
 
-}
-
-contactForm.init(); 
+// contactForm.init = function(){
 
 
+// }
 
+// contactForm.init(); 
+
+
+
+// tried using an external script sheet but didnt work out....
