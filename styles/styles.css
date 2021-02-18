@@ -471,7 +471,7 @@ main {
           justify-content: space-between;
 }
 
-.form {
+.contactForm {
   position: relative;
   width: 75%;
   bottom: 120px;
@@ -804,15 +804,15 @@ footer p {
 }
 
 .greyCouch img {
-  -webkit-transition: 0.2s ease-in;
-  transition: 0.2s ease-in;
   -webkit-box-shadow: -15px 15px 3px #F8FB05;
           box-shadow: -15px 15px 3px #F8FB05;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .greyCouch img:hover {
-  -webkit-box-shadow: -15px 15px 3px #065635;
-          box-shadow: -15px 15px 3px #065635;
+  -webkit-box-shadow: -15px 15px 3px #E0FDDF;
+          box-shadow: -15px 15px 3px #E0FDDF;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
 }

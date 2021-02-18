@@ -17,6 +17,7 @@
 
      <link rel="stylesheet" href="./styles/styles.css" />
      <script src="https://kit.fontawesome.com/419f914d10.js" crossorigin="anonymous"></script>
+     <script src="./javascript/blogScript.js"></script>
 </head>
 
 <body>
@@ -83,7 +84,7 @@
                          </ul>
                     </div>
           </div>
-               </section>
+          </section>
           </div>
           <!-- end of blogContainer -->
 
@@ -91,35 +92,15 @@
                <div class="wrapper">
                     <h3>Comments</h3>
                     <div class="commentContainer">
-                         <img src="./assets/comment-image.jpg" alt="" />
+                         <img src="./assets/comment-image2.jpg" alt="" />
                          <div class="commentText">
-                              <p>Tuesday October 9th, 2019 by Davin</p>
-                              <p>
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-                                   doloremque pariatur ratione exercitationem quod rem magni culpa
-                                   debitis ad nobis illo illum, voluptates, et doloribus maiores
-                                   rsse similique voluptatibus id.
+                              <p class=commentTitle></p>
+                              <p class=commentDes>
                               </p>
                          </div>
                     </div>
 
-
-                    <div>
-                         <div class="commentContainer">
-                              <img src="./assets/comment-image2.jpg" alt="" />
-                         <div class="commentText">
-                              <p>Tuesday October 10th, 2019 by Lisa</p>
-                              <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-                              doloremque pariatur ratione exercitationem quod remmagni culpa
-                              debitis ad nobis illo illum, voluptates, et doloribusmaiores
-                              esse similique voluptatibus id. </p>
-                         </div>
-                    </div>
-
-                    </div>
-
-                    <fieldset class="blogFieldset">
+                    <form class="blogForm">
                          <div class="contactEmail blogContactEmail">
                               <label class="sr-only" for="name"></label>
                               <input class="blogInput" type="text" id="name" placeholder="name" />
@@ -131,11 +112,11 @@
                               <label class="sr-only" for="message"></label>
                               <textarea name="message" id="message" cols="30" rows="10"
                                    placeholder="comment"></textarea>
-                              <button class="submitButton" type="submit" title="Submit">
+                              <button class="submitButton commentsButton" type="submit" title="Submit">
                                    Post Comment
                               </button>
                          </div>
-                    </fieldset>
+                    </form>
                </div> <!-- end of wrapper -->
 
           </section>
